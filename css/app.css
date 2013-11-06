@@ -1,6 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Damion);
-@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption);
-
+/*******************************************************************************
+  Application Styles
+*******************************************************************************/
+/**
+ * Backgound of body
+ */
 .bg {
   /* fallback */
   background-color: #8d2a25;
@@ -25,6 +28,9 @@
 }
 
 
+/**
+ * Content container 
+ */
 #container{
 	margin: 50px auto;
 	width: 960px;
@@ -34,6 +40,10 @@
 	font-family: 'PT Serif Caption', serif;
 }
 
+
+/**
+ * Drapdownlist Styles
+ */
 .dropdown-menu{
 	position: absolute;
 	top: 100%;
@@ -85,8 +95,9 @@
 	font-family: 'Damion', cursive;
 }
 
-
-
+/**
+ * Story styles
+ */
 .story, .result{
 	width: 800px;
 }
@@ -100,6 +111,9 @@
 	font-size: 20px;
 }
 
+/**
+ * Result styles
+ */
 .result {
 	margin: 50px auto;
 }
@@ -111,3 +125,9 @@
 .result.found .found, .result.not-found .not-found{
 	display: block;
 }
+
+/**
+ * Google web font (include at last to avoid "white loading page")
+ */
+@import url(https://fonts.googleapis.com/css?family=Damion);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption);
