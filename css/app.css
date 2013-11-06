@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Damion);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption);
+
+.bg {
+  /* fallback */
+  background-color: #8d2a25;
+  background-image:url("../imgs/bg.png");
+  background-position: center center;
+  background-repeat: repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#ef4747), to(#8d2a25));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #ef4747, #8d2a25);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #ef4747, #8d2a25);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #ef4747, #8d2a25);
+
+  /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+}
+
+
+#container{
+	margin: 50px auto;
+	width: 960px;
+	text-align: center;
+	text-shadow: 1px 2px 2px rgba(20, 20, 27, 0.8);
+	color: white;
+	font-family: 'PT Serif Caption', serif;
+}
+
+.dropdown-menu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 50px;
+	padding: 5px 0;
+	margin: 15px 0 0;
+	font-size: 18px;
+	list-style: none;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.dropdown-menu li{
+	display: block;
+	padding: 3px 10px;
+	clear: both;
+	font-weight: normal;
+	line-height: 1.428571429;
+	color: #ef4747;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+} 
+
+.dropdown a {
+	color: #FFF;
+	white-space: nowrap;
+	text-decoration: none;
+	border-bottom: thick dotted #FFF;
+}
+
+.dropdown.open > .dropdown-menu {
+	display: block;
+}
+
+.dropdown, a.found{
+	font-family: 'Damion', cursive;
+}
+
+
+
+.story, .result{
+	width: 800px;
+}
+
+.story{
+	margin: 20px auto;
+	font-size: 50px;
+}
+
+.story h3, .result{
+	font-size: 20px;
+}
+
+.result {
+	margin: 50px auto;
+}
+
+.result .found, .result .not-found{
+	display: none;
+}
+
+.result.found .found, .result.not-found .not-found{
+	display: block;
+}
